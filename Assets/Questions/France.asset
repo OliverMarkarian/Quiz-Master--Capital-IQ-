@@ -13,3 +13,8 @@ MonoBehaviour:
   m_Name: France
   m_EditorClassIdentifier: 
   question: What is the capital of France
+  answers:
+  - 
+  - 
+  - 
+  - 

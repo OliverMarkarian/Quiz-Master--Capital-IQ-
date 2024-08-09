@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: England
   m_EditorClassIdentifier: 
   question: What is the capital of England
+  answers:
+  - 'Manchester '
+  - Liverpool
+  - 'Birmingham '
+  - 'London '
+  correctAnswerIndex: 3
