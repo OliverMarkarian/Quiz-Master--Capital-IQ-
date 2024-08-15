@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: What is the capital of France
   answers:
-  - 
-  - 
-  - 
-  - 
+  - Marseille
+  - Lyon
+  - Paris
+  - Bordeaux
+  correctAnswerIndex: 2

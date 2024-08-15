@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: What is the capital of Greece
   answers:
-  - 
-  - 
-  - 
-  - 
+  - Thessaloniki
+  - Heraklion
+  - Patras
+  - Athens
+  correctAnswerIndex: 3

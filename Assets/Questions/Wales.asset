@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Wales
   m_EditorClassIdentifier: 
   question: What is the capital of Wales
+  answers:
+  - Cardiff
+  - Swansea
+  - Newport
+  - Wrexham
+  correctAnswerIndex: 0

@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Switzerland
   m_EditorClassIdentifier: 
   question: What is the capital of Switzerland
+  answers:
+  - Geneva
+  - Zurich
+  - Bern
+  - Lausanne
+  correctAnswerIndex: 2
