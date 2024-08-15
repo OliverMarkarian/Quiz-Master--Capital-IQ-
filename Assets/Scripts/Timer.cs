@@ -10,9 +10,14 @@ public class Timer : MonoBehaviour
     public bool isAnsweringQuestion;
     float timerValue;
     public float fillFraction;
+    public bool loadNextQuestion;
     void Update()
     {
         UpdateTimer();
+    }
+
+    public void CancelTimer(){
+        timerValue = 0;
     }
     void UpdateTimer()
     {
@@ -40,6 +45,7 @@ public class Timer : MonoBehaviour
             {
                 isAnsweringQuestion = true;
                 timerValue = timeToCompleteQuestion;
+                loadNextQuestion = true;
             }
         }
 

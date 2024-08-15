@@ -13,6 +13,7 @@ public class Quizz : MonoBehaviour
     [Header("Answers")]
     [SerializeField] GameObject[] answerButtons;
     int correctAnswerIndex;
+    bool hasAnsweredEarly;
 
     [Header("Button Colors")]
     [SerializeField] Sprite defaultAnswerSprite;
@@ -27,9 +28,28 @@ public class Quizz : MonoBehaviour
         //DisplayQuestion();
         GetNextQuestion();
     }
+    void Update(){
+        timerImage.fillAmount = timer.fillFraction;
+        if (timer.loadNextQuestion){
+            hasAnsweredEarly = false;
+            GetNextQuestion();
+            timer.loadNextQuestion = false;
+            
+        }
+        else if (!hasAnsweredEarly && !timer.isAnsweringQuestion){
+            DisplayAnswer(-1);
+            SetButtonState(false);
+            
+        }
+    }
     public void OnAnswerSelected(int index)
     {
-
+        hasAnsweredEarly = true;
+        DisplayAnswer(index);
+        SetButtonState(false);
+        timer.CancelTimer();
+    }
+    void DisplayAnswer(int index){
         Image buttonImage;
         if (index == question.GetCorrectAnswerIndex())
         {
@@ -45,7 +65,7 @@ public class Quizz : MonoBehaviour
             buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
             buttonImage.sprite = correctAnswerSprite;
         }
-        SetButtonState(false);
+        
     }
 
     void GetNextQuestion(){
