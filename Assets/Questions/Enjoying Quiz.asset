@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4e1e771653c144e86910f86fc8b7c8, type: 3}
-  m_Name: New Question 1
+  m_Name: Enjoying Quiz
   m_EditorClassIdentifier: 
   question: Are you enjoying this Quiz?
   answers:

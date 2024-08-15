@@ -1392,8 +1392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da1054c1cb57f3249bdd882b60788d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToCompleteQuestion: 12
-  timeToShowCorrectAnswer: 4
+  timeToCompleteQuestion: 10
+  timeToShowCorrectAnswer: 3
   isAnsweringQuestion: 0
   fillFraction: 0
   loadNextQuestion: 0
@@ -2062,6 +2062,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3962b92ba6919c04bad36ca9e90b3559, type: 2}
   - {fileID: 11400000, guid: b2bce8ee02c642541b4c293ce1a07413, type: 2}
   - {fileID: 11400000, guid: a3005841f906b064c9156f9dede0e7a2, type: 2}
+  - {fileID: 11400000, guid: c03da52872d47bc499846ffb8d3b55f1, type: 2}
+  - {fileID: 11400000, guid: bdb448c046c805242b58eca1ba2f0c6f, type: 2}
   answerButtons:
   - {fileID: 1823080999}
   - {fileID: 1810914022}
