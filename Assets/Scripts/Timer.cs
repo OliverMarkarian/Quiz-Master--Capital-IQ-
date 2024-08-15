@@ -16,7 +16,8 @@ public class Timer : MonoBehaviour
         UpdateTimer();
     }
 
-    public void CancelTimer(){
+    public void CancelTimer()
+    {
         timerValue = 0;
     }
     void UpdateTimer()
@@ -26,19 +27,21 @@ public class Timer : MonoBehaviour
 
         if (isAnsweringQuestion)
         {
-            if (timerValue > 0){
+            if (timerValue > 0)
+            {
                 fillFraction = timerValue / timeToCompleteQuestion;
             }
             else
             {
                 isAnsweringQuestion = false;
                 timerValue = timeToShowCorrectAnswer;
-                
+
             }
         }
         else
         {
-            if (timerValue > 0){
+            if (timerValue > 0)
+            {
                 fillFraction = timerValue / timeToShowCorrectAnswer;
             }
             else
@@ -49,6 +52,5 @@ public class Timer : MonoBehaviour
             }
         }
 
-        Debug.Log(isAnsweringQuestion + ": " + timerValue + "= " + fillFraction);
     }
 }
